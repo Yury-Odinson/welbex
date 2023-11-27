@@ -11,6 +11,11 @@
   padding: 0;
   scroll-behavior: smooth;
   transition: 0.2s;
+  background-color: #00000000;
+}
+
+html {
+  background-color: var(--var--background);
 }
 
 body {
@@ -28,7 +33,6 @@ code {
 }
 
 button {
-  background-color: #00000000;
   border: none;
   cursor: pointer;
 }
@@ -38,17 +42,14 @@ a {
 }
 
 .App {
-  margin: 0;
-  padding: 0;
-  background-image: url(/public/img/background.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
+  position: relative;
 }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
   max-width: 1140px;
-  background-color: #00000000;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -118,10 +119,6 @@ a {
 
 .img-whatsapp {
   background-image: url(/public/img/nav-contacts-whatsapp.png);
-}
-
-.body>* {
-  background-color: #00000000;
 }
 
 .body {
@@ -282,4 +279,88 @@ a {
   margin-right: 0;
   text-decoration: underline;
   text-align: right;
+}
+
+.back__bubble {
+  position: absolute;
+  z-index: 1;
+}
+
+.back__bubble_1 {
+  top: -10px;
+  right: 40%;
+}
+
+.back__bubble_2 {
+  top: 40px;
+  left: 43%;
+}
+
+.back__bubble_3 {
+  top: 450px;
+  right: 40%;
+  animation: bubble_3 8s ease infinite;
+}
+
+.back__bubble_4 {
+  top: -350px;
+  right: 0;
+  animation: bubble_4 10s ease infinite;
+}
+
+.back__bubble_5 {
+  top: 0;
+  left: 0;
+  animation: bubble_5 5s ease infinite;
+}
+
+@keyframes bubble_3 {
+  from {
+    opacity: 0.6;
+    scale: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+    scale: 0.9;
+  }
+
+  to {
+    opacity: 0.6;
+    scale: 1;
+  }
+}
+
+@keyframes bubble_4 {
+  from {
+    top: 100px;
+    right: 0;
+    opacity: 1;
+  }
+
+  50% {
+    top: 120px;
+    right: 70px;
+    opacity: 0.7;
+  }
+
+  to {
+    top: 100px;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bubble_5 {
+  from {
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0.8;
+  }
 }
