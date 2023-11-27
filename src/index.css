@@ -6,6 +6,11 @@
 * {
   background-color: var(--var--background);
   color: var(--var--textColor);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: 0.2s;
 }
 
 body {
@@ -33,6 +38,8 @@ a {
 }
 
 .App {
+  margin: 0;
+  padding: 0;
   background-image: url(/public/img/background.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -41,7 +48,7 @@ a {
 .wrapper {
   margin: 0 auto;
   max-width: 1140px;
-  height: 1000px;
+  /* height: 1000px; */
   background-color: #00000000;
 }
 
@@ -62,6 +69,7 @@ a {
   gap: 10px;
   max-width: 140px;
 }
+
 .header-logo>span {
   font-size: 10px;
   line-height: 12px;
@@ -112,3 +120,102 @@ a {
 .img-whatsapp {
   background-image: url(/public/img/nav-contacts-whatsapp.png);
 }
+
+.body>* {
+  background-color: #00000000;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 700px; */
+  /* border: 1px solid red; */
+
+}
+
+.first-col,
+.second-col {
+  max-width: 400px;
+  /* border: 1px solid red; */
+}
+
+.first-col__title,
+.first-col__name {
+  margin: 20px 0 0;
+  letter-spacing: 1px;
+  line-height: 60px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.first-col__name,
+.second-col__span {
+  margin: 0;
+  font-weight: 700;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(115deg, #FCB045, #FF3F78);
+}
+
+.first-col__tagline {
+  margin-top: 25px;
+  width: 70%;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  line-height: 25px;
+}
+
+.second-col {
+  /* border: 1px solid red; */
+  margin: 40px 0 0;
+}
+
+.second-col__title {
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 35px;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  letter-spacing: 1px;
+  /* border: 1px solid red; */
+}
+
+.second-col-row {
+  margin: 30px 0;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.second-col-cell {
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.second-col-cell__title {
+  font-size: 18px;
+}
+
+.second-col-cell__descr {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.second-col__button {
+  margin-top: 25px;
+  float: right;
+  background-color: #4077F3;
+  width: 260px;
+  height: 60px;
+  font-size: 16px;
+}
+
