@@ -5,24 +5,25 @@ export const Footer = () => {
             <div className="footer-col">
                 <div className="col1-title col__title">О КОПМАНИИ</div>
                 <div className="footer-col-items">
-                    <a href="/" className="footer__linkItem">Партнёрская программа</a>
-                    <a href="/" className="footer__linkItem">Вакансии</a>
+                    <a href="/" className="footer__linkItem footer__linkItemCo"><span>Партнёрская программа</span></a>
+                    <a href="/" className="footer__linkItem footer__linkItemCo"><span>Вакансии</span></a>
                 </div>
             </div>
 
             <div className="footer-col">
                 <div className="col2-title col__title">МЕНЮ</div>
                 <div className="footer-col-items">
-                    <a href="/" className="footer__linkItem">Расчёт стоимости</a>
-                    <a href="/" className="footer__linkItem">Услуги</a>
-                    <a href="/" className="footer__linkItem">Виджеты</a>
-                    <a href="/" className="footer__linkItem">Интеграции</a>
-                    <a href="/" className="footer__linkItem">Наши клиенты</a>
-                    <a href="/" className="footer__linkItem">Кейсы</a>
-                    <a href="/" className="footer__linkItem">Благодарственные письма</a>
-                    <a href="/" className="footer__linkItem">Сертификаты</a>
-                    <a href="/" className="footer__linkItem">Блог на YouTube</a>
-                    <a href="/" className="footer__linkItem">Вопрос / ответ</a>
+                    <a href="/" className="footer__linkItem"><span>Расчёт стоимости</span></a>
+                    <a href="/" className="footer__linkItem"><span>Услуги</span></a>
+                    <a href="/" className="footer__linkItem"><span>Виджеты</span></a>
+                    <a href="/" className="footer__linkItem"><span>Интеграции</span></a>
+                    <a href="/" className="footer__linkItem"><span>Наши клиенты</span></a>
+                    <a href="/" className="footer__linkItem footer__linkItemMobile"><span>Благодарность клиентов</span></a>
+                    <a href="/" className="footer__linkItem"><span>Кейсы</span></a>
+                    <a href="/" className="footer__linkItem footer__linkItemMail"><span>Благодарственные письма</span></a>
+                    <a href="/" className="footer__linkItem"><span>Сертификаты</span></a>
+                    <a href="/" className="footer__linkItem"><span>Блог на YouTube</span></a>
+                    <a href="/" className="footer__linkItem"><span>Вопрос / ответ</span></a>
                 </div>
             </div>
 
