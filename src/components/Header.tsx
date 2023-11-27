@@ -11,7 +11,7 @@ export const Header = () => {
                 <button className="nav-button">Виджеты</button>
                 <button className="nav-button">Интеграции</button>
                 <button className="nav-button">Кейсы</button>
-                <button className="nav-button">Сертификаты</button>
+                <button className="nav-button nav-buttonSert">Сертификаты</button>
             </nav>
 
             <div className="header-contacts">

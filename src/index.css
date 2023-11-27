@@ -203,6 +203,10 @@ a {
   font-size: 16px;
 }
 
+.second-col-cell__mobileTitle {
+  display: none;
+}
+
 .second-col__button {
   margin-top: 25px;
   float: right;
@@ -363,4 +367,107 @@ a {
   to {
     opacity: 0.8;
   }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .header-logo,
+  .header-contacts,
+  .nav-buttonSert {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .header-wrapper {
+    margin: 0;
+    background-color: #000;
+  }
+
+  .header-nav {
+    margin: 20px 0;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .nav-button {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .first-col__title {
+    margin: 15px 0 0;
+    font-size: 34px;
+    line-height: 48px;
+    letter-spacing: 2px;
+  }
+
+  .first-col__name {
+    font-size: 34px;
+    line-height: 35px;
+    letter-spacing: 4px;
+  }
+
+  .first-col__tagline {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .second-col,
+  .second-col>* {
+    margin: 0;
+    width: 100%;
+  }
+
+  .second-col__title,
+  .second-col__span {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 1.3px;
+  }
+
+  .second-col__span {
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  .second-col-cell__title,
+  .second-col-cell__descr,
+  .second-col__button {
+    display: none;
+  }
+
+  .second-col-row {
+    margin: 20px 0 0;
+  }
+
+  .second-col-cell {
+    width: 50%;
+  }
+
+  .second-col-cell__mobileTitle {
+    display: block;
+    padding-left: 20px;
+    background-image: url(/public/img/gradient_line.png);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .footer {
+    display: none;
+  }
+
 }
