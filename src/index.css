@@ -48,7 +48,6 @@ a {
 .wrapper {
   margin: 0 auto;
   max-width: 1140px;
-  /* height: 1000px; */
   background-color: #00000000;
 }
 
@@ -129,15 +128,11 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* height: 700px; */
-  /* border: 1px solid red; */
-
 }
 
 .first-col,
 .second-col {
   max-width: 400px;
-  /* border: 1px solid red; */
 }
 
 .first-col__title,
@@ -159,6 +154,10 @@ a {
   background-image: linear-gradient(115deg, #FCB045, #FF3F78);
 }
 
+.second-col__span {
+  background-image: linear-gradient(-20deg, #FCB045, #FD1D1D);
+}
+
 .first-col__tagline {
   margin-top: 25px;
   width: 70%;
@@ -169,7 +168,6 @@ a {
 }
 
 .second-col {
-  /* border: 1px solid red; */
   margin: 40px 0 0;
 }
 
@@ -182,7 +180,6 @@ a {
   font-weight: 500;
   text-align: right;
   letter-spacing: 1px;
-  /* border: 1px solid red; */
 }
 
 .second-col-row {
@@ -198,7 +195,6 @@ a {
 
 .second-col-cell {
   width: 50%;
-  /* border: 1px solid red; */
 }
 
 .second-col-cell__title {
@@ -219,3 +215,71 @@ a {
   font-size: 16px;
 }
 
+.footer {
+  margin: 120px 0;
+  display: grid;
+  grid-template-columns: 25% 40% 35%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-col-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 150px;
+  letter-spacing: 1px;
+}
+
+.footer-col:nth-last-child(2) {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+.footer-contacts-buttons {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-contacts__address {
+  margin-top: 10px;
+  letter-spacing: 0.6px;
+}
+
+.col__title {
+  color: #656566;
+}
+
+.footer-copyright {
+  grid-area: 3 / 1 / 4 / 4;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 250px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright>* {
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.footer-copyright__link {
+  margin-left: auto;
+  margin-right: 0;
+  text-decoration: underline;
+  text-align: right;
+}
